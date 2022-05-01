@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +10,15 @@
 </head>
 <body>
     <div id="app">
+        <form id="app-form" action="">
+            <input type="text" v-model="input_name" name="" id="" placeholder="Digite o seu nome">
+            <input type="submit" value="Enviar" v-on:click="submitForm" >
+        </form>
         <p>
-            O meu nome é: {{ name }}, e tenho {{ age }} anos.
+            O meu nome é: {{ name }}<!--, e tenho {{ age }} anos-->.
+        </p>
+        <p>
+            Data Biding: {{input_name}}
         </p>
     </div>
 </body>
